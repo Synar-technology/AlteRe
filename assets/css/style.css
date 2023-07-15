@@ -52,7 +52,7 @@ h6 {
   position: fixed;
   top: calc(50% - 30px);
   left: calc(50% - 30px);
-  border: 6px solid #4e6d52;
+  border: 6px solid   ;
   border-top-color: #fff;
   border-bottom-color: #fff;
   border-radius: 50%;
@@ -1421,8 +1421,7 @@ section {
 }
 
 .contact .info .email:hover i,
-.contact .info .address:hover i,
-.contact .info .phone:hover i {
+.contact .info .address:hover i {
   background: #4e6d52;
   color: #fff;
 }
@@ -1587,190 +1586,54 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  font-size: 14px;
+  font-size: 17px;
   background: #4e6d52;
+  padding: 2rem 0;
 }
 
-#footer .footer-newsletter {
-  padding: 50px 0;
-  background: #f3f5fa;
-  text-align: center;
-  font-size: 15px;
-  color: #444444;
+#footer p {
+  color: #fff ;
 }
 
-#footer .footer-newsletter h4 {
-  font-size: 24px;
-  margin: 0 0 20px 0;
-  padding: 0;
-  line-height: 1;
-  font-weight: 600;
-  color: black;
+.footer {
+  padding: 0 0 4rem 0;
 }
 
-#footer .footer-newsletter form {
-  margin-top: 30px;
-  background: #fff;
-  padding: 6px 10px;
-  position: relative;
-  border-radius: 50px;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.06);
-  text-align: left;
-}
-
-#footer .footer-newsletter form input[type=email] {
-  border: 0;
-  padding: 4px 8px;
-  width: calc(100% - 100px);
-}
-
-#footer .footer-newsletter form input[type=submit] {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  border: 0;
-  background: none;
-  font-size: 16px;
-  padding: 0 20px;
-  background: #c4c9bc;
-  color: #fff;
-  transition: 0.3s;
-  border-radius: 50px;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-}
-
-#footer .footer-newsletter form input[type=submit]:hover {
-  background: #4e6d52;
-}
-
-#footer .footer-top {
-  padding: 60px 0 30px 0;
-  background: #fff;
-}
-
-#footer .footer-top .footer-contact {
-  margin-bottom: 30px;
-}
-
-#footer .footer-top .footer-contact h3 {
-  font-size: 28px;
-  margin: 0 0 10px 0;
-  padding: 2px 0 2px 0;
-  line-height: 1;
-  text-transform: uppercase;
-  font-weight: 600;
+.footer a {
   color: #4e6d52;
 }
 
-#footer .footer-top .footer-contact p {
-  font-size: 14px;
-  line-height: 24px;
-  margin-bottom: 0;
-  font-family: "Jost", sans-serif;
-  color: #5e5e5e;
-}
-
-#footer .footer-top h4 {
-  font-size: 16px;
-  font-weight: bold;
-  color: #4e6d52;
-  position: relative;
-  padding-bottom: 12px;
-}
-
-#footer .footer-top .footer-links {
-  margin-bottom: 30px;
-}
-
-#footer .footer-top .footer-links ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-#footer .footer-top .footer-links ul i {
-  padding-right: 2px;
-  color: #4e6d52;
-  font-size: 18px;
-  line-height: 1;
-}
-
-#footer .footer-top .footer-links ul li {
-  padding: 10px 0;
-  display: flex;
-  align-items: center;
-}
-
-#footer .footer-top .footer-links ul li:first-child {
-  padding-top: 0;
-}
-
-#footer .footer-top .footer-links ul a {
-  color: #777777;
-  transition: 0.3s;
+.social a {
   display: inline-block;
-  line-height: 1;
-}
-
-#footer .footer-top .footer-links ul a:hover {
-  text-decoration: none;
-  color: #47b2e4;
-}
-
-#footer .footer-top .social-links a {
-  font-size: 18px;
-  display: inline-block;
-  background: #4e6d52;
-  color: #fff;
-  line-height: 1;
-  padding: 8px 0;
-  margin-right: 4px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
+  background: #f8f9fa;
+  position: relative;
   text-align: center;
-  width: 36px;
-  height: 36px;
-  transition: 0.3s;
+  color: #c4c9bc;
+  transition: color 0.3s ease-in-out;
 }
 
-#footer .footer-top .social-links a:hover {
-  background: #c4c9bc;
-  color: #fff;
-  text-decoration: none;
+.social a span {
+  display: inline-block;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 18px; /* Adjust the font size as desired */
+  transition: font-size 0.3s ease-in-out; /* Add transition for font size */
 }
 
-#footer .footer-bottom {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  color: #fff;
+.social a:hover {
+  color: #4e6d52;
 }
 
-#footer .copyright {
-  float: left;
+.social a:hover span {
+  font-size: 22px; /* Increase the font size on hover */
 }
 
-#footer .credits {
-  float: right;
-  font-size: 13px;
-}
-
-#footer .credits a {
-  transition: 0.3s;
-}
-
-@media (max-width: 768px) {
-  #footer .footer-bottom {
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-
-  #footer .copyright,
-  #footer .credits {
-    text-align: center;
-    float: none;
-  }
-
-  #footer .credits {
-    padding-top: 4px;
-  }
+.credits {
+  color: #c4c9bc;
+  font-size: 8px;
 }
