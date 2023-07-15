@@ -360,7 +360,7 @@ h6 {
   display: block;
 }
 */
-.body{
+.body {
   height: 100vh;
   background-color: #000;
   background-image: url(/assets/img/Carousel/1st-page.png);
@@ -368,7 +368,7 @@ h6 {
   background-position: center;
 }
 
-.body li{
+.body li {
   list-style: none;
 }
 
@@ -379,7 +379,7 @@ h6 {
 }
 
 .body a:hover{
-  color: orange
+  color: #4e6d52;
 }
 
 /*HEADER*/
@@ -389,7 +389,7 @@ header {
   padding: 0 2rem;
 }
 
-.navbar{
+.navbar {
   width: 100%;
   height: 60px;
   max-width: 1200px;
@@ -399,12 +399,12 @@ header {
   justify-content: space-between;
 }
 
-.navbar .logo a{
+.navbar .logo a {
   font-size: 1.5rem;
   font-weight: bold;
 }
 
-.navbar .links{
+.navbar .links {
   display: flex;
   gap: 2rem;
 }
@@ -422,14 +422,16 @@ header {
   position: absolute;
   right: 2rem;
   top: 60px;
+  height: 0;
   width: 300px;
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(15px);
   border-radius: 10px;
   overflow: hidden;
+  transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-.dropdown_menu.open{
+.dropdown_menu.open {
   height: 330px;
 }
 
@@ -440,16 +442,37 @@ header {
   justify-content: center;
 }
 
+/* HERO section */
+
+section#hero {
+  height: calc(100vh - 60px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #4e6d52;
+}
 
 /* RESPONSIVE DESIGN */
-@media (max-width:9920px) {
+@media (max-width:950px) {
   .navbar .links,
+  .navbar .action_btn {
+    display: none;
+  }
   .navbar .toggle_btn {
     display: block;
   }
 
   .dropdown_menu {
     display: block;
+  }
+}
+
+@media (max-width: 576px) {
+  .dropdown_menu {
+    left: 2rem;
+    width: unset;
   }
 }
 

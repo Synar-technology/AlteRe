@@ -40,12 +40,12 @@
     <div class="navbar">
       <div class="logo"><a href="#">Altere</a></div>
       <ul class="links">
-        <li><a href="#hero">Home</a></li>
+        <li><a href="#home">Home</a></li>
         <li><a href="#about">about</a></li>
-        <li><a href="#service">Food Recycling</a></li>
-        <li><a href="#home">Feed Manufacturers</a></li>
-        <li><a href="#contact">Impact</a></li>
-        <li><a href="#team">Team</a></li>
+        <li><a href="#Food Recycling">Food Recycling</a></li>
+        <li><a href="#Feed Manufacturers">Feed Manufacturers</a></li>
+        <li><a href="#Impact">Impact</a></li>
+        <li><a href="#Team">Team</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
       <div class="toggle_btn">
@@ -53,16 +53,40 @@
       </div>
     </div>
 
-    <div class="dropdown_menu open">
-      <li><a href="#hero">Home</a></li>
+    <div class="dropdown_menu">
+      <li><a href="#home">Home</a></li>
         <li><a href="#about">about</a></li>
-        <li><a href="#service">Food Recycling</a></li>
-        <li><a href="#home">Feed Manufacturers</a></li>
-        <li><a href="#contact">Impact</a></li>
-        <li><a href="#team">Team</a></li>
+        <li><a href="#Food Recycling">Food Recycling</a></li>
+        <li><a href="#Feed Manufacturers">Feed Manufacturers</a></li>
+        <li><a href="#Impact">Impact</a></li>
+        <li><a href="#Team">Team</a></li>
         <li><a href="#contact">Contact</a></li>
     </div>
+
+    <main>
+      <section id="hero">
+        <h1>Waste is a Resource in the wrong place</h1>
+      </section>
+    </main>
+
   </header>
+
+  
+
+  <script>
+    const toggleBtn =document.querySelector('.toggle_btn')
+    const toggleBtnIcon =document.querySelector('.toggle_btn i')
+    const dropDownMenu =document.querySelector('.dropdown_menu')
+
+    toggleBtn.onclick = function () {
+      dropDownMenu.classList.toggle('open')
+      const isOpen = dropDownMenu.classList.contains('open')
+
+      toggleBtnIcon.classList =isOpen
+      ? 'fa-solid fa-xmark'
+      : 'fa-solid fa-bars'
+    }
+  </script>
   
   <!-- End Header -->
 
