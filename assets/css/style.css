@@ -1389,8 +1389,8 @@ section {
   background-color: #4e6d52;
 }
 
-#contact .section-title {
-  color: #fff;
+.cont h2{
+  color: #fff;  
 }
 
 .contact .info {
