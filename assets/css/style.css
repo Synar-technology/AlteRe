@@ -1679,8 +1679,8 @@ section {
   position: absolute;
   top: 50%;
   transform: translate(-50%, -50%);
-  font-size: 18px; /* Adjust the font size as desired */
-  transition: font-size 0.3s ease-in-out; /* Add transition for font size */
+  font-size: 18px; 
+  transition: font-size 0.2s ease-in-out; 
 }
 
 
@@ -1689,23 +1689,23 @@ section {
 }
 
 .footer-content a:hover {
-  color: #1da1f2; /* Twitter hover color */
+  color: #1da1f2; 
 }
 
 .footer-content a:hover span.bi-facebook {
-  color: #3b5998; /* Facebook hover color */
+  color: #3b5998; 
 }
 
 .footer-content a:hover span.bi-instagram {
-  color: #c32aa3; /* Instagram hover color */
+  color: #c32aa3; 
 }
 
 .footer-content a:hover span.bi-linkedin {
-  color: #0077b5; /* LinkedIn hover color */
+  color: #0077b5; 
 }
 
 .social a:hover span {
-  font-size: 22px; /* Increase the font size on hover */
+  font-size: 22px; 
 }
 
 .credits {
@@ -1720,23 +1720,23 @@ section {
 .footer-logo {
   display: flex;
   justify-content: center;
-  margin-bottom: 20px; /* Increase the margin between .footer-logo and the content below */
-  padding-bottom: 20px; /* Add padding at the bottom to create space */
-  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  margin-bottom: 20px; 
+  padding-bottom: 20px; 
+  box-sizing: border-box; 
 }
 
 .footer-logo img {
-  max-width: 150px; /* Adjust the maximum width as desired */
-  height: auto; /* Maintain the aspect ratio */
-  display: block; /* Ensure proper alignment */
-  margin: 0 auto; /* Center the logo horizontally */
-  margin-top: -35px; /* Adjust the negative margin to move the image further above */
+  max-width: 150px; 
+  height: auto; 
+  display: block; 
+  margin: 0 auto; 
+  margin-top: -35px; 
 }
 
 
 
 
 .col-sm-4 {
-  margin-bottom: 2rem; /* Adjust the margin bottom to add separation between divs */
+  margin-bottom: 2rem; 
   margin-top: 3rem;
 }
