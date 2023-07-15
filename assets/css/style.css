@@ -1683,4 +1683,5 @@ section {
 
 .col-sm-4 {
   margin-bottom: 2rem; /* Adjust the margin bottom to add separation between divs */
+  margin-top: 3rem;
 }
