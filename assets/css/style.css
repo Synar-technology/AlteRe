@@ -1385,6 +1385,14 @@ section {
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
+.contact {
+  background-color: #4e6d52;
+}
+
+#contact .section-title {
+  color: #fff;
+}
+
 .contact .info {
   border-top: 3px solid #4e6d52;
   border-bottom: 3px solid #4e6d52;
@@ -1618,21 +1626,39 @@ section {
 --------------------------------------------------------------*/
 #footer {
   font-size: 17px;
-  background: #4e6d52;
   padding: 2rem 0; 
   text-align: center;
+  position: relative;
+  overflow: hidden;
 }
 
+.footer-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  filter: brightness(50%);
+  z-index: -1;
+}
+
+.footer-content {
+  position: relative;
+  z-index: 1;
+}
+
+
 #footer p {
-  color: #fff ;
+  color: #000;
 }
 
 .footer {
   padding: 0 0 3rem 0;
 }
 
-.footer a {
-  color: #4e6d52;
+.foot {
+  color: #000;
 }
 
 .social a {
@@ -1657,8 +1683,25 @@ section {
   transition: font-size 0.3s ease-in-out; /* Add transition for font size */
 }
 
-.social a:hover {
+
+.footer-content a {
   color: #4e6d52;
+}
+
+.footer-content a:hover {
+  color: #1da1f2; /* Twitter hover color */
+}
+
+.footer-content a:hover span.bi-facebook {
+  color: #3b5998; /* Facebook hover color */
+}
+
+.footer-content a:hover span.bi-instagram {
+  color: #c32aa3; /* Instagram hover color */
+}
+
+.footer-content a:hover span.bi-linkedin {
+  color: #0077b5; /* LinkedIn hover color */
 }
 
 .social a:hover span {
@@ -1666,12 +1709,20 @@ section {
 }
 
 .credits {
-  color: #c4c9bc;
+  color: #000;
   font-size: 10px;
 }
 
 .credits :hover {
-  color: #fff;
+  color: blue;
+}
+
+.footer-logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px; /* Increase the margin between .footer-logo and the content below */
+  padding-bottom: 20px; /* Add padding at the bottom to create space */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }
 
 .footer-logo img {
@@ -1679,7 +1730,11 @@ section {
   height: auto; /* Maintain the aspect ratio */
   display: block; /* Ensure proper alignment */
   margin: 0 auto; /* Center the logo horizontally */
+  margin-top: -35px; /* Adjust the negative margin to move the image further above */
 }
+
+
+
 
 .col-sm-4 {
   margin-bottom: 2rem; /* Adjust the margin bottom to add separation between divs */
