@@ -463,6 +463,10 @@ section#hero {
     align-items: center;
   }
 
+  @media (max-width:580px) {
+
+  }
+
 /* RESPONSIVE DESIGN */
 @media (max-width:992px) {
   .navbar .links,
@@ -494,7 +498,7 @@ section#hero {
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 20px 0;
+  padding: 40px 0;
   overflow: hidden;
 }
 
