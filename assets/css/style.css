@@ -1619,7 +1619,8 @@ section {
 #footer {
   font-size: 17px;
   background: #4e6d52;
-  padding: 4rem 0;
+  padding: 2rem 0; 
+  text-align: center;
 }
 
 #footer p {
@@ -1627,7 +1628,7 @@ section {
 }
 
 .footer {
-  padding: 0 0 4rem 0;
+  padding: 0 0 3rem 0;
 }
 
 .footer a {
@@ -1671,4 +1672,15 @@ section {
 
 .credits :hover {
   color: #fff;
+}
+
+.footer-logo img {
+  max-width: 150px; /* Adjust the maximum width as desired */
+  height: auto; /* Maintain the aspect ratio */
+  display: block; /* Ensure proper alignment */
+  margin: 0 auto; /* Center the logo horizontally */
+}
+
+.col-sm-4 {
+  margin-bottom: 2rem; /* Adjust the margin bottom to add separation between divs */
 }
