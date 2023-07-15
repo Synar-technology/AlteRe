@@ -356,10 +356,12 @@ h6 {
 # Carousel Section
 --------------------------------------------------------------*/
 #hero {
-  width: 100%;
+  
   height: 100vh;
   background: #fff;
 }
+
+/*----------------------------------------------------------
 
 #hero .container {
   padding-top: 72px;
@@ -378,6 +380,7 @@ h6 {
   margin-bottom: 50px;
   font-size: 24px;
 }
+
 
 #hero .btn-get-started {
   font-family: "Jost", sans-serif;
@@ -421,6 +424,21 @@ h6 {
 
 #hero .animated {
   animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+-----------------------------------------------------*/
+
+#carouselExampleDark .carousel-inner {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#carouselExampleDark .carousel-inner img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform-origin: bottom right;
+  transform: scale(1.2);
 }
 
 @media (max-width: 991px) {
