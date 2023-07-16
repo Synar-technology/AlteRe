@@ -118,20 +118,7 @@ h6 {
   background: #fff;
 }
 
-#header .logo {
-  height: 100px;
-  font-size: 30px;
-  margin: 0;
-  padding: 0;
-  line-height: 1;
-  font-weight: 500;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-}
-
-
-
-.body .logo img {
+img.logo-img {
   height: 95px;
   width: 150px;
 }
@@ -396,7 +383,7 @@ header {
   right: 0px;
   width: 100%;
   height: 60px;
-  max-width: 1200px;
+  max-width: 2000px;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -404,19 +391,12 @@ header {
   z-index: 9999;
 }
 
-.navbar .container {
-  width: 100%;
-  min-height: 100vh;
-  padding-left: 8%;
-  padding-right: 8%;
-  box-sizing: border-box;
-  overflow: hidden;
-}
 
 .navbar .links {
   padding-right: 70px;
   display: flex;
   gap: 3rem;
+  margin-bottom: 50px;
 }
 
 .navbar .toggle_btn {
@@ -477,16 +457,56 @@ header {
   margin-bottom: 20px;
 }
 
-  @media (max-width:580px) {
+@media (max-width: 2000px) {
+  .hero h1{
+    font-size: 100px;
+  }
+}
+
+@media (max-width: 1600px) {
+  .hero h1{
+    font-size: 90px;
+  }
+}
+
+  @media (max-width: 992px) {
 
     .hero h1{
-     font-size: 60px ;
-     margin-top: 445px;
+     font-size: 80px ;
+     margin-top: -179px;
+    }
+  }
+
+  @media (max-width: 722px) {
+
+    .hero h1{
+     font-size: 65px ;
+     margin-top: -79px;
+    }
+  }
+  
+  @media (max-width: 580px) {
+
+    .hero h1{
+     font-size: 50px ;
+     margin-top: -179px;
+    }
+  }
+
+  @media (max-width: 372px) {
+    .hero h1{
+      font-size: 45px;
+    }
+  }
+
+  @media (max-width: 250px) {
+    .hero h1{
+      font-size: 30px;
     }
   }
 
 /* RESPONSIVE DESIGN */
-@media (max-width:992px) {
+@media (max-width: 992px) {
   .navbar .links,
   .navbar .action_btn {
     display: none;
