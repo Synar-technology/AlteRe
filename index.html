@@ -36,72 +36,45 @@
 
   <!-- ======= Header ======= -->
   
-  <header class="body">
-    <div class="navbar">
-      <div class="logo">
-        <img src="assets/img/Navbar/nav-logo.png" class="logo-img" alt="">
-      </div>
-      <ul class="links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">about</a></li>
-        <li><a href="#Food Recycling">Food Recycling</a></li>
-        <li><a href="#Feed Manufacturers">Feed Manufacturers</a></li>
-        <li><a href="#Impact">Impact</a></li>
-        <!-- <li><a href="#Team">Team</a></li> -->
-        <li><a href="#contact">Contact Us</a></li>
-      </ul>
-      <div class="toggle_btn">
-        <i class="fa-solid fa-bars"></i>
+  <header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center">
+
+      <h1 class="logo me-auto"><a href="index.html" class="logo me-auto"><img src="assets/img/Navbar/nav-logo.png" alt="" class="img-fluid"></a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#services">Food Recycling</a></li>
+          <li><a class="nav-link scrollto" href="#portfolio"> Feed Manufacturers</a></li>
+          <li><a class="nav-link scrollto" href="#team">Impact</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
+          <h1>Waste is a Resource in the wrong place</h1>
+          
+        </div>
+        <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
+          <img src="assets/img/hero-img.png" class="img-fluid animated" alt="">
+        </div>
       </div>
     </div>
 
-    <div class="dropdown_menu" style="top: 90px;">
-      <li><a href="#home">Home</a></li>
-        <li><a href="#about">about</a></li>
-        <li><a href="#Food Recycling">Food Recycling</a></li>
-        <li><a href="#Feed Manufacturers">Feed Manufacturers</a></li>
-        <li><a href="#Impact">Impact</a></li>
-       <!-- <li><a href="#Team">Team</a></li>-->
-        <li><a href="#contact">Contact</a></li>
-    </div>
-
-    <main>
-      <section class="hero">
-        <div class="quote-container" style="margin-left: 0px;padding-left: 0px;">
-          <div class="quote">
-        <h1>Waste is a Resource in the wrong place</h1>
-      </div>
-      </div>
-      </section>
-    </main>
-
-  </header>
-
-  
-
-  <script>
-    const toggleBtn =document.querySelector('.toggle_btn')
-    const toggleBtnIcon =document.querySelector('.toggle_btn i')
-    const dropDownMenu =document.querySelector('.dropdown_menu')
-
-    toggleBtn.onclick = function () {
-      dropDownMenu.classList.toggle('open')
-      const isOpen = dropDownMenu.classList.contains('open')
-
-      toggleBtnIcon.classList =isOpen
-      ? 'fa-solid fa-xmark'
-      : 'fa-solid fa-bars'
-    }
-  </script>
-  
-  <!-- End Header -->
-
-  <!-- ======= Carousel Section ======= -->
-
-  <section class="HERO">
-  </section>
-
-  <!-- End Carousel -->
+  </section><!-- End Hero -->
 
   <main id="main">
 
