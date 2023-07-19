@@ -386,6 +386,8 @@ h6 {
 #hero {
   width: 100%;
   height: 80vh;
+  filter: brightness(75%);
+  
 }
 
 #hero .container {
@@ -394,9 +396,9 @@ h6 {
 
 #hero h1 {
   margin: 0 0 10px 0;
-  font-size: 48px;
+  font-size: 90px;
   font-weight: 700;
-  line-height: 56px;
+  line-height: 75px;
   color: #000;
 }
 
