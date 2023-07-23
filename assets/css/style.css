@@ -901,11 +901,58 @@ section {
     justify-content: flex-end;
   }
 }
+/*------IMPACT SECTION-------*/
+
+.impact {
+  display: flex;
+}
+
+.button-impact {
+  width: 150px; /* Adjust the width as needed */
+}
+
+.expand-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.info-impact {
+  flex-grow: 1;
+  background-color: #f2f2f2;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  overflow: hidden;
+  transition: width 0.3s ease;
+}
+
+.info-impact.expand {
+  width: calc(100% - 150px); /* Adjust based on the width of button-container */
+}
+
+.info-content {
+  display: none;
+}
+
+.info-content.active {
+  display: block;
+}
+.expand-button.active {
+  background-color: #ffcccb; /* Change this color to suit your design */
+}
+
+
+/*------END IMPACT SECTION-------*/
 
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
-.portfolio #portfolio-flters {
+/*.portfolio #portfolio-flters {
   list-style: none;
   margin-bottom: 20px;
 }
@@ -998,7 +1045,7 @@ section {
 /*--------------------------------------------------------------
 # Portfolio Details
 --------------------------------------------------------------*/
-.portfolio-details {
+/*.portfolio-details {
   padding-top: 40px;
 }
 
