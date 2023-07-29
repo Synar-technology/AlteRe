@@ -613,133 +613,74 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Why Us
+# Food Recycling
 --------------------------------------------------------------*/
-.why-us .content {
-  padding: 60px 100px 0 100px;
+#food-recycling {
+  background-color: #f0f0f0;
+  padding: 50px 0;
 }
 
-.why-us .content h3 {
-  font-weight: 400;
-  font-size: 34px;
-  color: #4e6d52;
-}
-
-.why-us .content h4 {
-  font-size: 20px;
-  font-weight: 700;
-  margin-top: 5px;
-}
-
-.why-us .content p {
-  font-size: 15px;
-  color: #728274;
-}
-
-.why-us .img {
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-
-.why-us .accordion-list {
-  padding: 0 100px 60px 100px;
-}
-
-.why-us .accordion-list ul {
-  padding: 0;
-  list-style: none;
-}
-
-.why-us .accordion-list li+li {
-  margin-top: 15px;
-}
-
-.why-us .accordion-list li {
-  padding: 20px;
-  background: #fff;
-  border-radius: 4px;
-}
-
-.why-us .accordion-list a {
-  display: block;
+.circle-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
-  font-family: "Poppins", sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 500;
-  padding-right: 30px;
-  outline: none;
-  cursor: pointer;
+  width: 600px; /* Adjust the circle size as needed */
+  height: 600px; /* Adjust the circle size as needed */
+  border-radius: 50%;
+  background-color: #fff;
+  margin: 0 auto;
 }
 
-.why-us .accordion-list span {
-  color: #728274;
-  font-weight: 600;
-  font-size: 18px;
-  padding-right: 10px;
-}
-
-.why-us .accordion-list i {
-  font-size: 24px;
+.feature-item {
+  text-align: center;
+  width: 150px; /* Adjust the feature item width as needed */
+  height: 100px; /* Adjust the feature item height as needed */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   position: absolute;
-  right: 0;
-  top: 0;
 }
 
-.why-us .accordion-list p {
-  margin-bottom: 0;
-  padding: 10px 0 0 0;
-}
+.feature1 { transform: rotate(0deg) translate(0, -260px) rotate(0deg); }
+.feature2 { transform: rotate(60deg) translate(0, -260px) rotate(-60deg); }
+.feature3 { transform: rotate(120deg) translate(0, -260px) rotate(-120deg); }
+.feature4 { transform: rotate(180deg) translate(0, -260px) rotate(-180deg); }
+.feature5 { transform: rotate(240deg) translate(0, -260px) rotate(-240deg); }
+.feature6 { transform: rotate(300deg) translate(0, -260px) rotate(-300deg); }
 
-.why-us .accordion-list .icon-show {
-  display: none;
-}
-
-.why-us .accordion-list a.collapsed {
-  color: #343a40;
-}
-
-.why-us .accordion-list a.collapsed:hover {
+.feature-item i {
+  font-size: 48px;
   color: #4e6d52;
+  margin-bottom: 10px;
 }
 
-.why-us .accordion-list a.collapsed .icon-show {
-  display: inline-block;
+.feature-item h4 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
 }
 
-.why-us .accordion-list a.collapsed .icon-close {
-  display: none;
+.feature-item p {
+  font-size: 16px;
+  margin: 0;
 }
 
-@media (max-width: 1024px) {
-
-  .why-us .content,
-  .why-us .accordion-list {
-    padding-left: 0;
-    padding-right: 0;
-  }
+.logo-recycle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1; /* Ensure the logo appears above the feature items */
 }
 
-@media (max-width: 992px) {
-  .why-us .img {
-    min-height: 400px;
-  }
-
-  .why-us .content {
-    padding-top: 30px;
-  }
-
-  .why-us .accordion-list {
-    padding-bottom: 30px;
-  }
+.logo-recycle img {
+  max-width: 150px; /* Adjust the logo size as needed */
+  height: auto;
 }
 
-@media (max-width: 575px) {
-  .why-us .img {
-    min-height: 200px;
-  }
-}
+
 
 /*--------------------------------------------------------------
 # Skills
