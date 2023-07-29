@@ -905,30 +905,34 @@ section {
 
 .impact {
   display: flex;
+  padding: 40px;
 }
 
 .button-impact {
   width: 150px; /* Adjust the width as needed */
+  color: #4e6d52;
 }
 
 .expand-button {
   width: 100%;
   padding: 10px;
-  background-color: #f9f9f9;
-  border: 1px solid #ccc;
+  background-color: #4e6d52;
+  border: 1px solid #4e6d52;
   border-radius: 4px;
   margin-bottom: 5px;
   cursor: pointer;
+  color: white;
 }
 
 .info-impact {
   flex-grow: 1;
-  background-color: #f2f2f2;
+  background-color: #4e6d52;
   padding: 20px;
-  border: 1px solid #ccc;
+  border: 1px solid #f9f9f9;
   border-radius: 4px;
   overflow: hidden;
   transition: width 0.3s ease;
+  width: 45rem;
 }
 
 .info-impact.expand {
@@ -941,9 +945,11 @@ section {
 
 .info-content.active {
   display: block;
+  color: white;
 }
 .expand-button.active {
-  background-color: #ffcccb; /* Change this color to suit your design */
+  background-color: white; /* Change this color to suit your design */
+  color: #4e6d52;
 }
 
 
