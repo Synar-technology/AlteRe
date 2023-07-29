@@ -616,70 +616,68 @@ section {
 # Food Recycling
 --------------------------------------------------------------*/
 #food-recycling {
-  background-color: #f0f0f0; /* Set your desired background color */
+  background-color: #f0f0f0;
   padding: 50px 0;
-}
-
-.logo img {
-  max-width: 150px; /* Adjust the logo size as needed */
-  height: auto;
 }
 
 .circle-container {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
   position: relative;
-  width: 400px; /* Adjust the circle size as needed */
-  height: 400px; /* Adjust the circle size as needed */
+  width: 600px; /* Adjust the circle size as needed */
+  height: 600px; /* Adjust the circle size as needed */
   border-radius: 50%;
-  background-color: #fff; /* Set the circle background color */
-}
-
-.features {
-  display: flex;
-  flex-wrap: wrap;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 80%;
+  background-color: #fff;
+  margin: 0 auto;
 }
 
 .feature-item {
   text-align: center;
-  margin: 10px;
-  flex: 1 0 33.33%;
+  width: 150px; /* Adjust the feature item width as needed */
+  height: 100px; /* Adjust the feature item height as needed */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
 }
+
+.feature1 { transform: rotate(0deg) translate(0, -260px) rotate(0deg); }
+.feature2 { transform: rotate(60deg) translate(0, -260px) rotate(-60deg); }
+.feature3 { transform: rotate(120deg) translate(0, -260px) rotate(-120deg); }
+.feature4 { transform: rotate(180deg) translate(0, -260px) rotate(-180deg); }
+.feature5 { transform: rotate(240deg) translate(0, -260px) rotate(-240deg); }
+.feature6 { transform: rotate(300deg) translate(0, -260px) rotate(-300deg); }
 
 .feature-item i {
   font-size: 48px;
-  color: #4e6d52; /* Set the icon color */
-  display: block;
+  color: #4e6d52;
   margin-bottom: 10px;
 }
 
 .feature-item h4 {
   font-size: 18px;
   font-weight: bold;
+  margin: 0;
 }
 
 .feature-item p {
   font-size: 16px;
+  margin: 0;
 }
 
-.logo-recycle  {
+.logo-recycle {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: 1; /* Ensure the logo appears above the feature items */
 }
 
-@media (max-width: 768px) {
-  .circle-container {
-    width: 300px;
-    height: 300px;
-  }
+.logo-recycle img {
+  max-width: 150px; /* Adjust the logo size as needed */
+  height: auto;
 }
 
 
