@@ -848,13 +848,21 @@ section {
 
 
 /*------IMPACT SECTION-------*/
-
-.impact {
+.section.impact {
+  padding: 50px; /* Add padding to the section to give some space */
+  background-color: #f5f5f5; /* Add a background color for the section */
   display: flex;
+  height: 100vh; /* Adjust the height as needed */
 }
 
 .button-impact {
   width: 150px; /* Adjust the width as needed */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 20px;
+  background-color: #f9f9f9;
 }
 
 .expand-button {
@@ -873,8 +881,60 @@ section {
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 4px;
+  overflow-y: auto; /* Enable vertical scrolling if content overflows */
+  scroll-behavior: smooth; /* Enable smooth scrolling within info container */
+}
+
+.info-content {
+  display: none;
+}
+
+.info-content.active {
+  display: block;
+}
+
+/* Optional: Highlight the currently selected button */
+.expand-button.active {
+  background-color: #ffcccb; /* Change this color to suit your design */
+}
+
+/* Optional: Add smooth scrolling behavior for the info container */
+.info-impact {
+  overflow-y: hidden;
+  transition: transform 1s; /* Add a smooth transition for scrolling animation */
+}
+
+.impact {
+  display: flex;
+  padding: 40px;
+  width: 86rem;
+}
+
+.button-impact {
+  width: 150px; /* Adjust the width as needed */
+  color: #4e6d52;
+}
+
+.expand-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4e6d52;
+  border: 1px solid #4e6d52;
+  border-radius: 4px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  color: white;
+}
+
+.info-impact {
+  flex-grow: 1;
+  background-color: #4e6d52;
+  padding: 20px;
+  border: 1px solid #f9f9f9;
+  border-radius: 4px;
   overflow: hidden;
   transition: width 0.3s ease;
+  width: 45rem;
 }
 
 .info-impact.expand {
@@ -887,12 +947,12 @@ section {
 
 .info-content.active {
   display: block;
+  color: white;
 }
 .expand-button.active {
-  background-color: #ffcccb; /* Change this color to suit your design */
+  background-color: white; /* Change this color to suit your design */
+  color: #4e6d52;
 }
-
-
 /*------END IMPACT SECTION-------*/
 
 /*--------------------------------------------------------------
